@@ -16,12 +16,29 @@ console.log(playerName, playerAttack, playerHealth);
 var fight = function () {
     window.alert("welcome to robot gladiators");
     playerAttack - enemyHealth
-    console.log(playerAttack - enemyHealth)
+    console.log(playerAttack - enemyHealth);
     enemyAttack - playerHealth
-    console.log(enemyAttack - playerHealth)
+    console.log(enemyAttack - playerHealth);
     console.log(playerName + "  attacked " + enemyName) + " . " + enemyName + " now has " + enemyHealth + "  health remaining "
     playerHealth = playerHealth - enemyAttack;
-    console.log(enemyName + " attacked " + playerName + " . " + playerName + "  now has " + playerHealth + " health remaining ")
+    console.log(enemyName + " attacked " + playerName + " . " + playerName + "  now has " + playerHealth + " health remaining ");
+    // check enemy's health
+    if (enemyHealth <= 0) {
+        window.alert(enemyName + "  has died");
+    }
+    else {
+        window.alert(enemyName + " still has " + enemyHealth + " health left ");
+
+
+    }
+    enemyHealth = enemyHealth - playerAttack;
+    console.log(enemyName + "  attacked " + playerName + " ." + playerName + " now has " + playerHealth + "  health remaining ")
+    if (enemyHealth <= 0) {
+        window.alert(playerName + " has died ")
+    }
+    else {
+        window.alert(playerName + "  still has " + playerHealth + " health left")
+    }
 
 };
 
