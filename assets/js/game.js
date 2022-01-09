@@ -10,6 +10,9 @@ var enemyName = "roberto"
 var enemyHealth = 50;
 var enemyAttack = 12;
 
+// You can also log multiple values at once like this
+console.log(playerName, playerAttack, playerHealth);
+
 var fight = function () {
     window.alert("welcome to robot gladiators");
     playerAttack - enemyHealth
@@ -17,6 +20,8 @@ var fight = function () {
     enemyAttack - playerHealth
     console.log(enemyAttack - playerHealth)
     console.log(playerName + "  attacked " + enemyName) + " . " + enemyName + " now has " + enemyHealth + "  health remaining "
+    playerHealth = playerHealth - enemyAttack;
+    console.log(enemyName + " attacked " + playerName + " . " + playerName + "  now has " + playerHealth + " health remaining ")
 
 };
 
