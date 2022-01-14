@@ -7,10 +7,12 @@ var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10
 
-var enemyName = "roberto"
-var enemyHealth = 50;
-var enemyAttack = 12;
-
+var enemyNames = ["Roborto", "amy android", " Robo trumble"];
+for (var i = 0; i < enemyNames.length; i++) {
+    console.log(enemyNames[i]);
+    console.log(i);
+    console.log(enemyNames[i] + "is at " + i + " index ")
+}
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth);
 
@@ -68,4 +70,4 @@ var fight = function () {
 
 
 
-fight()
+//fight()
