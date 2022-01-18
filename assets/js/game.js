@@ -97,10 +97,14 @@ var startGame = function () {
     else {
       window.alert('You have lost your robot in battle! Game Over!');
       break;
+
+
     }
   }
-  //play again
-  startGame()
+  // after the loop ends, player is either out of health or enemies to fight, so run the endGame function
+  endGame();
+
+
 }
 
 // function to end the entire game
