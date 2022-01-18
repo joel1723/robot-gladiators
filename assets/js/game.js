@@ -124,4 +124,14 @@ var endGame = function () {
   else {
     window.alert("Thank you for playing Robot Gladiators! Come back soon!");
   }
+  confirm()
+  // ask player if they'd like to play again
+  var playAgainConfirm = window.confirm(" would you like to playing  again")
+  if (playAgainConfirm) {
+    //restart game
+    startGame()
+  }
+  else {
+    window.alert(" thank you for playing robot gladiators")
+  }
 }
